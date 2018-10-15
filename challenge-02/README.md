@@ -70,7 +70,7 @@ Crie uma função com as seguintes características:
 6. E ainda, se nenhuma das condições acima forem atendidas, retorne `null`.
 */
 function testarValores(x, y, z) {
-  if(x != null || y != null || z !=null){
+  if(x != null && y == null && z ==null){
     return z;
   } else if (x != null && y != null && z == null) {
     return x + y;
