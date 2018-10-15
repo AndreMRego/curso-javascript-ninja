@@ -86,11 +86,11 @@ function testarValores(x, y, z) {
   if(x != null && y == null && z ==null){
     return x;  // testarValores(4) retornou 4
   } else if (x != null && y != null && z == null) {
-    return x + y; testarValores(2,3) retornou 5
+    return x + y; //testarValores(2,3) retornou 5
   } else if (x != null && y != null && z !=null) {
-    return (x + y)/z; testarValores(4,8,2) retornou 6
+    return (x + y)/z; //testarValores(4,8,2) retornou 6
   } else if (x == null && y == null && z ==null ) {
-    return false; testarValores() retornou false
+    return false; //testarValores() retornou false
   }
  }
 ```
