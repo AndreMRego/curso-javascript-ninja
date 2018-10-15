@@ -21,16 +21,16 @@ Crie uma função que adicione um valor à variável criada acima, e retorne a s
     O valor da variável agora é VALOR.
 Onde VALOR é o novo valor da variável.
 */
-function novoValor(x) {
-  num = x;
+function novoValor() {
+  num = 15;
   return "O valor da variável agora é "+num;
  }
 
 // Invoque a função criada acima.
-novoValor(10);
+novoValor();
 
 // Qual o retorno da função? (Use comentários de bloco).
-/* O valor da variável agora é 10 */
+/* O valor da variável agora é 15 */
 
 /*
 Crie uma função com as seguintes características:
@@ -40,11 +40,10 @@ Crie uma função com as seguintes características:
 3. O retorno da função deve ser a multiplicação dos 3 argumentos, somando `2` ao resultado da multiplicação.
 */
 function verificarValores(x, y, z) {
-  if(x != null && y != null && z != null) {
-    return x * y * z + 2;
-   } else {
+  if(x === undefined || y === undefined || z === undefined) {
     return "Preencha todos os valores corretamente!";
-    }
+   } 
+    return (x * y * z) + 2;
  }
 
 // Invoque a função criada acima, passando só dois números como argumento.
@@ -69,25 +68,29 @@ Crie uma função com as seguintes características:
 6. E ainda, se nenhuma das condições acima forem atendidas, retorne `null`.
 */
 function testarValores(x, y, z) {
-  if(x != null && y == null && z ==null){
+  if(x !== undefined && y === undefined && z === undefined){
     return x;
-  } else if (x != null && y != null && z == null) {
+  } else if (x !== undefined && y !== undefined && z === undefined) {
     return x + y;
-  } else if (x != null && y != null && z !=null) {
+  } else if (x !== undefined && y !== undefined && z !== undefined) {
     return (x + y)/z;
-  } else if (x == null && y == null && z ==null ) {
+  } else if (x === undefined && y === undefined && z === undefined ) {
     return false;
+  } else {
+   return null;
   }
  }
 
 // Invoque a função acima utilizando todas as possibilidades (com nenhum argumento, com um, com dois e com três.) Coloque um comentário de linha ao lado da função com o resultado de cada invocação.
  
-    testarValores(4) //retornou 4
+    testarValores(4); //retornou 4
  
-    testarValores(2,3) //retornou 5
+    testarValores(2,3); //retornou 5
   
-    testarValores(4,8,2) //retornou 6
+    testarValores(4,8,2); //retornou 6
   
-    testarValores() //retornou false
+    testarValores(); //retornou false
+    
+    
 
 ```
