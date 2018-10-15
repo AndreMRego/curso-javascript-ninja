@@ -71,7 +71,7 @@ Crie uma função com as seguintes características:
 */
 function testarValores(x, y, z) {
   if(x != null && y == null && z ==null){
-    return z;
+    return x;
   } else if (x != null && y != null && z == null) {
     return x + y;
   } else if (x != null && y != null && z !=null) {
