@@ -24,7 +24,7 @@ para o nome, idade, peso e data de nascimento dessa pessoa.
 var person = {
   name: 'Andre',
   age: 21,
-  weight:'60kg',
+  weight: 60,
   birthday: '13/02/1997'
 };
 
@@ -38,9 +38,12 @@ Após o loop, mostre a frase:
 'The person has [COUNTER] properties'
 */
 // ?
+var counter = 0;
 for(var prop in person) {
   console.log('The '+ prop +' of person is ' + person[prop]);
+  counter++;
 }
+console.log('The person has '+ counter + ' properties');
 /*
 Crie uma função chamada `moreThan`, que vai verificar se a pessoa (objeto
 criado acima) é mais velha que a idade passada por parâmetro.
